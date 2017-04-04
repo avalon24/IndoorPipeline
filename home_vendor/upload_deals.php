@@ -12,20 +12,22 @@
         <select name="vendor_name">
             <option value="Macy's">Macy's
             <option value="JCPenny">JCPenny
-            <option value="JewelD">JewelD
+            <option value="Nike">Nike
+	    <option value="Dillard's">Dillard's
+	    <option value="Chamberlin's">Chamberlin's
         </select>
         <br>
 
         <label>Start date & time  :</label>
-        <input type="text" name="start_stamp" />
-        <br>
-
+        <input type="text" name="start_stamp" /><br>
+        <i>eg. YYYY-MM-DD HH:MM:SS</i><br>
+	<br>
         <label>Stop date & time  :</label>
-        <input type="text" name="stop_stamp" />
-        <br><br>
+        <input type="text" name="stop_stamp" /><br>
+        <i>eg. YYYY-MM-DD HH:MM:SS</i><br><br>
 
         <label>&nbsp;</label>
-        <input type="submit" value="Upload" />
+        <input type="submit" value="Upload" /><br>
         <br>
     </form><br><br><br>
     

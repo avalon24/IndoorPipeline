@@ -3,7 +3,7 @@ require('../model/ip_database.php');
 require('../model/ip_users_db.php');
 
 $action = filter_input(INPUT_POST, 'action');
-echo "$action";
+//echo "$action";
 if ($action == NULL) {
     $action = filter_input(INPUT_GET, 'action');
     if ($action == NULL) {
@@ -12,10 +12,10 @@ if ($action == NULL) {
 }
 
 if ($action == 'update_vendor1') {
-    echo "halt4";
+ //   echo "halt4";
 	$vendor_name = filter_input(INPUT_POST, 'vendor_name');
-	echo $vendor_name;
-	echo "XXX";
+//	echo $vendor_name;
+//	echo "XXX";
     $vendor_phn = filter_input(INPUT_POST, 'vendor_phn');
     $vendor_email = filter_input(INPUT_POST, 'vendor_email');
     $vendor_weblink = filter_input(INPUT_POST, 'vendor_weblink');
@@ -25,15 +25,15 @@ if ($action == 'update_vendor1') {
     } else { 
     //    echo "halt4";
 		update_vendor1($vendor_name,$vendor_phn,$vendor_email,$vendor_weblink);
-		echo "Successfully Updated!!";
+//		echo "Successfully Updated!!";
 		//header("Location: .?vendor_name=:vendor_name");
 		include('home.php');
     } 
 } else if ($action == 'update_deals') {
-    echo "halt5";
+  //  echo "halt5";
 	$deal_desc = filter_input(INPUT_POST, 'deal_desc');
-	echo $deal_desc;
-	echo "XXX";
+//	echo $deal_desc;
+//	echo "XXX";
 	$vendor_name = filter_input(INPUT_POST, 'vendor_name');
     $deal_stime = filter_input(INPUT_POST, 'start_stamp');
     $deal_etime = filter_input(INPUT_POST, 'stop_stamp');
@@ -46,9 +46,9 @@ if ($action == 'update_vendor1') {
     	foreach ($vendors as $vendor) {
     		$vendor_ID = $vendor['vendorID'];
     	}
-    	echo "$vendor_ID";
+  //  	echo "$vendor_ID";
 		update_deals($deal_desc,$vendor_ID,$deal_stime,$deal_etime);
-		echo "Successfully Updated!!";
+//		echo "Successfully Updated!!";
 		//header("Location: .?vendor_name=:vendor_name");
 		include('home.php');
     } 

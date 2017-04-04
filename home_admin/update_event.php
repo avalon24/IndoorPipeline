@@ -10,12 +10,15 @@
         
         <label>Start date & time  :</label>
         <input type="text" name="start_stamp" />
-        <br>
+        <br><i>eg. YYYY-MM-DD HH:MM:SS</i>
+
+	<br><br><br>
 
         <label>Stop date & time  :</label>
         <input type="text" name="stop_stamp" />
-        <br><br>
+        <br><i>eg. YYYY-MM-DD HH:MM:SS</i>
 
+	<br><br>
         <label>Location  :</label>
         <input type="text" name="location" />
         <br><br>

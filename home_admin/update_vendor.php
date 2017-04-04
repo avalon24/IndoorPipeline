@@ -8,7 +8,9 @@
         <select name="vendor_name">
             <option value="Macy's">Macy's
             <option value="JCPenny">JCPenny
-            <option value="JewelD">JewelD
+            <option value="Nike">Nike
+	    <option value="Dillard's">Dillard's
+	    <option value="Chamberlain's">Chamberlain's
         </select>
         <br>
 
@@ -22,7 +24,7 @@
             <option value="03">Pharma
             <option value="01">Food
             <option value="04">Hardware
-            <option value="05">Jewelery
+            <option value="05">Jewelry
         </select>
         <br><br>
 
